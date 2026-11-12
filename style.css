@@ -1,0 +1,23 @@
+/* Soft gradient backdrop */
+body {
+  background-image: radial-gradient(
+    circle at 20% 0%,
+    hsl(262 83% 58% / 0.10),
+    transparent 45%
+  );
+}
+
+/* Rounded, floating message composer */
+#message-composer {
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 30px hsl(262 83% 58% / 0.12);
+  border: 1px solid hsl(262 83% 58% / 0.25);
+}
+
+/* Smooth hover on starter cards / buttons */
+button {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+button:hover {
+  transform: translateY(-1px);
+}
